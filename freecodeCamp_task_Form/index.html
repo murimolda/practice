@@ -10,20 +10,57 @@
   <h1 id="title">freeCodeCamp Survey Form</h1>
   <p id="description">Thank you for taking the time to help us improve the platform</p>
   <form action="" id="survey-form">
-    <fieldset>
-      <label for="name">Name
+    <div class="form-group">
+      <label id="name-label" for="name">Name
         <input type="text" name="name" id="name" placeholder="Enter your name" required>
       </label>
-      <label for="email">Email
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email
         <input type="email" name="email" id="email" placeholder="Enter your Email" required>
       </label>
-      <label for="age">Age (optional)
-        <input type="number" name="age" id="age" min="9" max="99" placeholder="Age">
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="age">Age (optional)
+        <input type="number" name="age" id="age" min="10" max="99" placeholder="Age">
       </label>
-    </fieldset>
-    <fieldset></fieldset>
-    <fieldset></fieldset>
-    <fieldset></fieldset>
+    </div>
+    <div class="form-group">
+      <p>Which option best describes your current role?</p>
+      <select name="role" id="dropdown" required>
+        <option value="" selected disabled>Select current role</option>
+        <option value="student">Student</option>
+        <option value="job">Full Time Job</option>
+        <option value="learner">Full Time Learner</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <p>Would you recommend freeCodeCamp to a friend?</p>
+      <label for="definitely">
+        <input type="radio" name="user-recommend" id="definitely" value="definitely" checked>
+       Definitely
+      </label>
+      <label for="maybe">
+        <input type="radio" name="user-recommend" id="maybe" value="maybe">
+       Maybe
+      </label>
+      <label for="not-sure">
+        <input type="radio" name="user-recommend" id="not-sure" value="not-sure">
+       Not sure
+      </label>
+    </div>
+    <div class="form-group">
+      <p>What is your favorite feature of freeCodeCamp?</p>
+      <select name="mostLike" id="most-like" required>
+        <option value="" selected disabled>Select an option</option>
+        <option value="challenges">Challenges</option>
+        <option value="projects">Projects</option>
+        <option value="community">Community</option>
+        <option value="openSource">Open Source</option>
+      </select>
+    </div>
   </form>
 </body>
 </html>
